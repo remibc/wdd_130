@@ -192,7 +192,7 @@ main section img {
 .home-title2 {
     font-family: "Architects Daughter", "Permanent Marker","Chelsea Market";
     font-size: 10em;
-    margin-top: center;
+    text-align: center;
     color: #F3FAF4;
     text-shadow: 2px 2px 25px black, 0 0 50px #56BD90, 0 0 50px #3F91C7;
 }
@@ -228,7 +228,7 @@ main section img {
     transform: rotate(360deg)
 }
 .utaht {
-    background-color: rgb(164, 174, 174);
+    background-color: #a4aeae;
     color: black;
     text-decoration: none;
     font-family: "Raleway", "Permanent Marker","Chelsea Market";
