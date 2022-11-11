@@ -86,7 +86,7 @@ footer{
     font-size: 1.2em;
     font-family: "Raleway",sans-serif,Arial;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -175,8 +175,87 @@ main section img {
 #hero-img{
     width: 100%;
 }
+.rivers {
+    display: grid;
+    grid-template-columns: repeat(10,.5fr);
+    grid-template-rows: repeat(12,.2fr);
+    margin-top: 100px;
+}
+#background2{
+    height: 100%;
+    background-color: #56BD90;
+    padding-left: 10%;
+    grid-column: 1/11;
+    grid-row: 1/13;
+}
 
-
+.home-title2 {
+    font-family: "Architects Daughter", "Permanent Marker","Chelsea Market";
+    font-size: 10em;
+    margin-top: center;
+    color: #F3FAF4;
+    text-shadow: 2px 2px 25px black, 0 0 50px #56BD90, 0 0 50px #3F91C7;
+}
+.idaho {
+    width: 60%;
+    grid-column: 3/8;
+    grid-row: 2/10;
+    transition: transform .5s;
+}
+.idaho:hover {
+    width: 90%;
+    transform: rotate(360deg)
+}
+.idahot {
+    background-color: rgb(61, 144, 199);
+    color: #F3FAF4;
+    text-decoration: none;
+    font-family: "Raleway", "Permanent Marker","Chelsea Market";
+    padding: 15px;
+    height: 110%;
+    grid-column: 5/10;
+    grid-row: 3/7;
+}
+.utah {
+    width: 60%;
+    grid-column: 6/11;
+    grid-row: 7/10;
+    padding-top: 15%;
+    transition: transform .5s;
+}
+.utah:hover {
+    width: 90%;
+    transform: rotate(360deg)
+}
+.utaht {
+    background-color: rgb(164, 174, 174);
+    color: black;
+    text-decoration: none;
+    font-family: "Raleway", "Permanent Marker","Chelsea Market";
+    padding: 15px; 
+    grid-column: 2/7;
+    grid-row: 9/10;
+}
+.arizona {
+    width: 60%;
+    grid-column: 3/7;
+    grid-row: 11/13;
+    padding-top: 50px;
+    transition: transform .5s;
+}
+.arizona:hover {
+    width: 100%;
+    transform: rotate(360deg)
+}
+.arizonat {
+    background-color: #f3faf4;
+    color: #6f7364;
+    text-decoration: none;
+    font-family: "Raleway", "Permanent Marker","Chelsea Market";
+    padding: 15px; 
+    grid-column: 5/10;
+    grid-row: 11/12;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
