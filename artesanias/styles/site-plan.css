@@ -23,9 +23,18 @@ Fonts are separated by a | */
   --nav-link-color: #0b8cac;
   --nav-background-color: #f7cc25;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #e42380;
+
 }
 
+.home:hover{
+  background-color: #e42380;
+}
+.la:hover{
+  background-color: #56a35b;
+}
+.cu:hover{
+  background-color: #0b8cac;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
