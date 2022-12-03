@@ -13,6 +13,10 @@ header{
     grid-row: 3/4;
     width: 150%;
 }
+.logo1:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -79,6 +83,17 @@ nav a{
     text-align: center;
     font-size: 1.5em;
     padding: 0 100px;
+
+}
+
+main h2{
+    font-family: "Capriola",sans-serif,Arial ;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 7px 100px 7px;
+    background-color: #0b8cac;
+    color:white;
+    border-radius: 25px;
 }
 
 .flores{
@@ -94,7 +109,14 @@ nav a{
     width:20%;
     padding-top: 40px;
 }
-.msg2{
+.flores3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    padding-bottom: 20px;
+}
+.msg2, .msg3{
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;   
 }
@@ -105,10 +127,25 @@ nav a{
     padding-top: 200px;
     font-family:"Capriola",sans-serif,Arial ;
 }
+.msg3 h2{
+    grid-column: 3/4;
+    grid-row: 1/2; 
+    text-align: center;
+    padding-top: 150px;
+    font-family:"Capriola",sans-serif,Arial ;
+}
 .msg2 p{
     grid-column: 3/4;
     grid-row: 1/2;
     padding-top: 270px;
+    text-align: center;
+    font-family: "Inter", "Permanent Marker","Chelsea Market";
+    font-weight: bolder;
+}
+.msg3 p{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-top: 200px;
     text-align: center;
     font-family: "Inter", "Permanent Marker","Chelsea Market";
     font-weight: bolder;
@@ -120,6 +157,12 @@ nav a{
     grid-column: 3/4;
     grid-row: 1/2;
     
+    width: 100%;
+}
+.arma{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-top: 100px;
     width: 100%;
 }
 .logo3{
@@ -171,7 +214,7 @@ footer nav a:hover{
   max-width: 1000px;
   position: relative;
   margin: auto;
-  background-color: rgb(8, 29, 97);
+  background-color: #0b8cac;
   border-radius: 50px;
   border: 5px dotted #E887D4;
 }
@@ -251,3 +294,139 @@ footer nav a:hover{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Style the tab buttons */
+.tablink {
+    background-color: #0b8cac;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+    font-family:"Capriola",sans-serif,Arial ;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #AA1917;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    font-family: "Inter", "Permanent Marker","Chelsea Market";
+  }
+  
+  /* Style each tab content individually */
+  #gift {background-color:#e42380;}
+  #events {background-color:#56a35b;}
+  #customize {background-color:#f7cc25;}
+
+.contactla{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%; 
+}
+
+#feedback {
+    background-color: #f7cc25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;  
+}
+.moveDown {
+    margin-top: 3em;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #f7cc25;
+    font-family:"Capriola",sans-serif,Arial ;
+    grid-column: 2/3;
+  }
+  
+  #msg{
+    height: 274px;
+    width: 364px;
+  }
+
+  #form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", "Permanent Marker","Chelsea Market";
+    font-size: 20px
+  }
+  #info {
+    list-style: none;
+    padding-top: 20%;
+    font-family: "Inter", "Permanent Marker","Chelsea Market";
+    font-size: 20px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #info li {
+    padding-top: 15px;
+  }
+  
+
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  .cont{
+    width: 5%;
+  }
+  .arma1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: -1;
+    padding-left: 200px;
+  }
+  .arma2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: -1;
+    padding-top: 350px;
+  }
+  .button button{
+    font-family:"Capriola",sans-serif,Arial ;
+    margin-left: 30%;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .super:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
