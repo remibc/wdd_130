@@ -5,36 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artesania | Get In Touch</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
+<div id="content">
+
     <header>
+        <div class="background"></div> 
         <a id="logo_link"  href="index.html">
             <img src ="images/logo1.png" alt="logo1" class="logo1">
         </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="lamparas.html">Lamparas Artesanales</a>
-            <a href="site-plan.html">Site Plan</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="lamparas.html" class="la">Lamparas Artesanales</a>
+            <a href="site-plan.html" class="sp">Site Plan</a>
         </nav>
     </header>
+    <div>
+    <img src ="images/flogo.png" alt="logo1" class="logogit">
+    <h1>GET IN TOUCH</h1>
+    </div>
+    <main class="git">
+        <img src="images/back.png" alt="background" class="back">
+        <ul class="cartesania">
+        <li>
+            <img src="images/contact.png" alt="fb icon" class="cont">
+            Remi Barron
+        </li>
+        <li>
+            <img src="images/tel.png" alt="fb icon" class="cont">
+            +526251209475</li>
+        <li>
+            <img src="images/email.png" alt="instagram icon" class="cont">
+            rbarronch@gmail.com</li>
+        <li>
+            <img src="images/ins.png" alt="instagram icon" class="cont">
+            @remi.barron</li>
+        </ul>
 
-    <main>
-        <h1>GET IN TOUCH</h1>
-        <p>Remi Barron</p>
-        <p>+526251209475</p>
-        <p>rbarronch@gmail.com</p>
-        <p>@remi.barron</p>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
+        <button onclick="document.getElementById('id01').style.display='block'" class="email">Send an Email!</button>
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div id="container">
+            <ul class="box">
                 <li>
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name"  />
+                  <input type="text" id="name" name="user_name"  >
                 </li>
                 <li>
                   <label for="mail">E-mail:</label>
-                  <input type="email" id="mail" name="user_email" />
+                  <input type="email" id="mail" name="user_email" >
                 </li>
                 <li>
                   <label for="msg">Message:</label>
@@ -43,19 +68,28 @@
                 <li class="button">
                     <button type="submit">Send your message</button>
                 </li>
-              </ul>
-        </form>
-              <h1>Questions</h1>
-              <section class="q1"><input type="checkbox" ><i></i> <h3>How much does it cost to publish?</h3><div><p>If you are concerned about prices. Don't worry. Post your product is free </p></div></section>
-              <section class="q1"><input type="checkbox" ><i></i> <h3>How often can I update my section?</h3><div><p>Depends of how many brands are in work. It an be between 3-15 days</p></div></section>
-              <section class="q1"><input type="checkbox" ><i></i> <h3>I want to have a Section. Who do I have to contact? </h3><div><p>You have multiple choices. The recomendation is to sent an email. Artesania will provice the requirements</p></div></section>
-              <section class="q1"><input type="checkbox" ><i></i> <h3>I want to buy something. Where can I pay?</h3><div><p>Each section will have a contact person. Please contact the person. Artesania is only a place to post. We don't do any kind of transaction.</p></div></section>
+            </ul>
+            </div>
+            <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
     </main>
+              <h1>Questions</h1>
+              <button class="accordion">How much does it cost to publish?</button><div class="panel"><p>If you are concerned about prices. Don't worry. Post your product is free </p></div>
+              <button class="accordion">How often can I update my section?</button><div class="panel"><p>Depends of how many brands are in work. It an be between 3-15 days</p></div>
+              <button class="accordion">I want to have a Section. Who do I have to contact? </button><div class="panel"><p>You have multiple choices. The recomendation is to sent an email. Artesania will provice the requirements</p></div>
+              <button class="accordion">I want to buy something. Where can I pay?</button><div class="panel"><p>Each section will have a contact person. Please contact the person. Artesania is only a place to post. We don't do any kind of transaction.</p></div>
+
 
     <footer>
-        <p>Artesania &copy; 2022 - Remi Barron</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="getintouch.html">Get in Touch</a></p>
+        <div class="background"></div> 
+        <nav>
+            <p>Artesania &copy; 2022 - Remi Barron</p>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="getintouch.html">Get in Touch</a>
+        </nav>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/fb.png" alt="fb icon">
@@ -68,6 +102,67 @@
             </a>
         </div>
     </footer>
-
+</div>
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+
+
+var acc = document.getElementsByClassName("accordion");
+var j;
+
+for (j = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+    </script>
 </html>
