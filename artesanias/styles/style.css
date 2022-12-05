@@ -435,7 +435,7 @@ form {
     grid-template-columns: 10% 40% 40% 10%;
   }
   .back{
-    grid-column: 2/4;
+    grid-column: 1/5;
     grid-row: 1/2;
     width: 100%;
   }
@@ -524,7 +524,7 @@ form {
   grid-row: 1/2;
   height: 50px;
   width: 100px;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 30%;
   font-family:"Capriola",sans-serif,Arial ;
 }
